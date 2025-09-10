@@ -1,17 +1,88 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 50px;
+  background-color: #210dd4ab;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: white;
 }
+
 h1 {
-    color: #333;
+  margin-bottom: 30px;
 }
+
+.lesson-card {
+  background: #fff;
+  color: #000;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.lesson-card h2 {
+  margin-top: 0;
+}
+
+.pdf-section {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.pdf-section a {
+  color: #cc5200;
+  font-weight: bold;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 button {
-    background-color: #0088cc;
+  background-color: #cc5200;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reportForm {
+  background: #f4f4f4;
+  color: black;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
+}
+#socialFooter {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#socialFooter a {
+    color: #ffcc00;
+    font-weight: bold;
+    margin: 0 5px;
+    text-decoration: none;
 }

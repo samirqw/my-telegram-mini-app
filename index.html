@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    <title>تطبيقي المصغر</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>تطبيق الفيزياء - المعمار</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>مرحباً بك في تطبيق تيليجرام!</h1>
-    <p>هذا تطبيق مصغر بسيط.</p>
-    <button id="closeButton">إغلاق التطبيق</button>
-    <script src="script.js"></script>
+  <h1>📘 دروس وتمارين الفيزياء</h1>
+
+  <div id="lessonsContainer"></div>
+
+  <button id="reportBtn">📣 تبليغ عن مشكلة</button>
+  <div id="reportForm" class="hidden">
+    <input type="text" id="name" placeholder="اسمك">
+    <input type="email" id="email" placeholder="بريدك الإلكتروني">
+    <textarea id="message" placeholder="وصف المشكلة"></textarea>
+    <button id="sendTicket">إرسال البلاغ</button>
+  </div>
+
+  <button id="closeButton">❌ اغلاق التطبيق</button>
+  <script src="script.js"></script>
+  <!-- روابط التواصل الاجتماعي -->
+<div id="socialFooter">
+    <a href="https://wa.me/212645270025" target="_blank">WhatsApp</a> و
+    <a href="https://www.instagram.com/y7y_s12" target="_blank">Instagram</a>
+    تابعني   عبر
+</div>
 </body>
 </html>
