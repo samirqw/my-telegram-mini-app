@@ -19,6 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
       pdfSolution: "https://raw.githubusercontent.com/samirqw/my-telegram-mini-app/main/pdfs/solution.pdf"
     }
   ];
+  document.addEventListener("DOMContentLoaded", () => {
+  const tg = window.Telegram?.WebApp;
+  if (tg?.BackButton) {
+    // إظهار زر الرجوع في الشريط العلوي
+    tg.BackButton.show();
+    tg.BackButton.onClick(() => {
+      // عند الضغط عليه: العودة للشاشة الرئيسية
+      document.getElementById("lessonsContainer").style.display = "none";
+      document.getElementById("backButton").classList.add("hidden");
+      document.getElementById("startButton").classList.remove("hidden");
+    });
+  }
+});
 
   // دالة لعرض الدروس
   function loadLessons() {
@@ -105,3 +118,4 @@ document.addEventListener("DOMContentLoaded", () => {
     else alert("اغلاق التطبيق");
   });
 });
+
