@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lessons = [
     {
       title:       "الدرس الأول: الحركة",
-      pdfLesson:   "https://raw.githubusercontent.com/samirqw/my-telegram-mini-app/main/pdfs/lesson1.pd",
+      pdfLesson:   "https://raw.githubusercontent.com/samirqw/my-telegram-mini-app/main/pdfs/lesson1.pdf",
       pdfExercise: "https://raw.githubusercontent.com/samirqw/my-telegram-mini-app/main/pdfs/exercice1.pdf",
       pdfSolution: "https://raw.githubusercontent.com/samirqw/my-telegram-mini-app/main/pdfs/solution.pdf"
     }
@@ -118,5 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
     else alert("اغلاق التطبيق");
   });
 });
+
 
 
