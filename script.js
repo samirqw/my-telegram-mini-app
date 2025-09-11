@@ -2,6 +2,7 @@
 const tg = window.Telegram.WebApp;
 tg.ready();
 
+
 // زر الإغلاق
 document.getElementById('closeButton').addEventListener('click', () => tg.close());
 
@@ -9,11 +10,18 @@ document.getElementById('closeButton').addEventListener('click', () => tg.close(
 const apiBase = 'https://your-app-name.up.railway.app/api';
 
 // تحميل الدروس والتمارين
-async function loadLessons() {
-  const res = await fetch(`${apiBase}/lessons`);
-  const lessons = await res.json();
+const lessons = [
+  {
+    title: "الدرس الأول: الحركة",
+    pdfLesson: "https://github.com/samirqw/my-telegram-mini-app/blob/main/pdfs/lesson1.pdf.pdf",
+    pdfExercise: "https://github.com/samirqw/my-telegram-mini-app/blob/main/pdfs/exercice1.pdf.pdf",
+    pdfSolution: "https://github.com/samirqw/my-telegram-mini-app/blob/main/pdfs/solution.pdf.pdf"
+  }
+];
 
+function loadLessons() {
   const container = document.getElementById('lessonsContainer');
+
   container.innerHTML = lessons.map(lesson => `
     <div class="lesson-card">
       <h2>${lesson.title}</h2>
@@ -43,7 +51,6 @@ async function loadLessons() {
     </div>
   `).join('');
 }
-
 // نموذج التبليغ
 document.getElementById('reportBtn').addEventListener('click', () => {
   document.getElementById('reportForm').classList.toggle('hidden');
